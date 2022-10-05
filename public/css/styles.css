@@ -14,3 +14,14 @@ body {
   color: #fff;
   background-color: #000;
 }
+
+.btn{
+  margin-top: 1.5rem;
+}
+
+.social-block .btn{
+  width: 80%;
+  margin-left: 3rem;
+}
+
+
