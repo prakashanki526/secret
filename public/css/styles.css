@@ -1,6 +1,6 @@
 
 body {
-  background-color: #99a2a8;
+  background-color: rgb(236, 236, 255);
 }
 
 .centered {
@@ -12,7 +12,7 @@ body {
   text-align: center;
   font-size: 2rem;
   color: #fff;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.73)
 }
 
 .btn{
@@ -23,5 +23,46 @@ body {
   width: 80%;
   margin-left: 3rem;
 }
+
+.secret-card{
+  padding-top: 0.5rem;
+  padding-bottom: 0rem;
+  background-color: rgb(58, 56, 56);
+  color: #fff;
+}
+
+.secret-card p{
+  font-size: larger;
+
+}
+
+.block-buttons{
+  display: block;
+}
+
+.logout{
+  align-items: right;
+  text-align: right;
+  padding-right: 50px;
+}
+
+.menubar{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: larger;
+  background-color:black;
+  margin:0%;
+}
+
+.menubar a{
+  color: white;
+  text-decoration: none;
+}
+
+.menubar a:hover{
+  color: rgb(193, 185, 185);
+}
+
+
 
 

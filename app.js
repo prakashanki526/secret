@@ -28,10 +28,6 @@ app.use(passport.session());
 
 mongoose.connect("mongodb://localhost:27017/userDB",{useNewUrlParser:true});
 
-// const secretSchema = new mongoose.Schema({
-//     secret: String
-// });
-
 const userSchema = new mongoose.Schema({
     email: String,
     password: String,
@@ -149,7 +145,7 @@ app.get("/my-secrets",function(req,res){
 });
 
 app.post("/register", function(req,res){
-    User.register({username: req.body.username},req.body.password, function(err,user){
+    User.register({username: req.body.username, display_name:req.body.name},req.body.password, function(err,user){
         if(err){
             console.log(err);
             res.redirect("/register");
